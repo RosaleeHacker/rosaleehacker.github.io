@@ -1,1 +1,113 @@
-Hello World
+ <html>
+ <head>
+    <title>Rose Hacker</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="rose-style.css">
+ </head>
+
+ <body>
+ <div class="main-body-wrapper maxWidth"  id="top">
+
+<!--nav bar-->
+<nav id="navbarOn" class="navbar-main">
+        <ul>
+            <li><a href="#aboutHere">about</a></li>
+            <li><a href="#codeHere">projects</a></li>
+            <li><a href="#contactHere">contact</a></li>
+        </ul>
+</nav> 
+
+<nav id="burgerOn" class="burger">
+  <a href="#" class="burger__button" id="burger-button">
+    <span class="burger__button__icon"></span>
+  </a>
+  <ul class="burger__menu" id="about_code_cta">
+    <li><a onclick="close_menu()" href="#aboutHere">About</a></li>
+    <li><a onclick="close_menu()" href="#codeHere">Projects</a></li>
+    <li><a onclick="close_menu()" href="#contactHere">Contact</a></li>
+  </ul>
+</nav>
+  
+<!-- rose pic--> 
+<div class="rosePicWrapper">
+    <div class="pic">
+        <img src="rose.jpg" alt="rose">
+    </div>    
+       
+<!-- title --> 
+<header class="titleCol">     
+    <div class="col">
+        <h1 class="title">Rosalee Hacker</h1>
+        <br>
+        <h2>Manager &middot; Designer &middot; Developer</h2>
+    </div>
+</header>      
+</div>
+   
+<!-- about--> 
+<article class="aboutWrapper" id="aboutHere">
+    <section class="aboutCol">
+        <div class="ab-col">
+            <span class="section-title">About</span>
+            <br>
+            <span>Hey there! I'm a full time student at the Rochester Institute of Technology, pursuing a B.S. in Web and Mobile Computing. I love web design, development and project management, and am currently looking for full time positions available in the field. </span>
+            <span>I have a development background, but I get the most enjoyment from working on CSS. Style is important in achieving the perect aesthetic. I also enjoy creating graphics and editing photos in Photoshop. I am always looking for projects and new photography challenges. For any communication, email or send me a message on LinkedIn. </span>
+        </div>        
+    </section>
+</article>   
+
+<!--projects-->
+<div id="codeHere" class="codeWrapper">  
+    <div class="projectTitle">
+        <span class="bracket">&lt;</span>
+        <span class="section-title">Projects</span>
+        <span class="bracket">&gt;</span>
+    </div> 
+
+    <section class="codeExamplesBox">
+        <div class="project">
+            <a id="appLink1" class="appSize" href="https://github.com/RosaleeHacker/Until-Dawn-App" alt="Until Dawn Ionic App" target="_blank"><p>Until Dawn</p></a>
+        </div>
+        <div class="project">
+            <a id="appLink2" class="appSize" href="https://github.com/RosaleeHacker/Audition-Manager" alt="Audition Manager Ionic App" target="_blank"><p>Audition Manager</p></a>
+        </div>
+        <div class="project">
+            <a id="appLink3" class="appSize" href="https://github.com/RosaleeHacker/MiniPiano" alt="MiniPiano" target="_blank"><p>Mini Piano</p></a>
+        </div>
+        <div class="project">
+            <a id="appLink4" class="appSize" href="https://github.com/RosaleeHacker/Creeps" alt="Creeps" target="_blank"><p>Creeps</p></a>
+        </div>
+        <div class="project">
+            <a id="appLink5" class="appSize" href="https://github.com/RosaleeHacker/Rose-CSS" alt="Rose CSS" target="_blank"><p>Rose-Style</p></a>
+        </div>
+    </section>         
+</div>     
+                                
+
+<article class="contact-wrapper" id="contactHere">
+    <div class="contactTitle">
+        <span class="section-title">Contact</span>
+    </div>
+    <section class="socialBox">
+        <div id="email_logo" class="logo"><a href="mailto:rosaleeahacker@gmail.com" target="_top"><p>email</p></a></div>
+        <div id="linkedin_logo" class="logo"><a href="https://www.linkedin.com/in/rosehacker/"><p>LinkedIn</p></a></div>
+        <div id="github_logo" class="logo"><a href="https://github.com/RosaleeHacker"><p>GitHub</p></a></div>
+        <div id="resume_logo" class="logo"><a href="resume.pdf"><p>Resume</p></a></div>
+    </section> <!--socialBox-->
+    
+</article> <!--aboutWrapper-->   
+
+<!--footer-->   
+<footer class="footer">             
+        <div class="footerBottom">
+            <h4 class="item">&copy; Rosalee Hacker 2018</h4>
+        </div>               
+</footer>                     
+   
+   
+</div> <!--main wrapper-->              
+<!--js-->
+<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/script.js"></script>  
+</body>
+</html>
