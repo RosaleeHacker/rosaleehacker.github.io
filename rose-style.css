@@ -5,7 +5,6 @@ body {
 }
 
 body {
-    /*padding: 50px;*/
   -webkit-font-smoothing: antialiased;
     font-weight: 600;
     background: #EDE7F0;
@@ -28,12 +27,10 @@ ul{
     width: 80vw;
     display:block;
     margin: auto;
-    /*background: #74099C; */
 }
 
 .maxWidth{    
     max-width: 1400px;   
-    /*  Adjust width of the example  - in this box as its a demo */
 }
 
 /* nav bar */
@@ -85,7 +82,7 @@ body.open:before {
 body:before {
     content: "";
     position: fixed;
-    background-color: rgb(148,0,211);
+    background-color: #5a3787;
     width: 100%;
     overflow: hidden;
     top: 0;
@@ -129,8 +126,7 @@ body:before {
     height: 2px;
     top: 50%;
     left: 0;
-    right: 0;
-    
+    right: 0;  
 }
 
 .burger__button__icon:before,
@@ -142,8 +138,7 @@ body:before {
     width: 20px;
     height: 2px;
     left: 0;
-    right: 0;
-    
+    right: 0;   
 }
 
 .burger__button__icon:before {
@@ -183,7 +178,6 @@ body:before {
     position: relative;
     visibility: hidden;
     opacity: 0;
-    
 }
 
 .burger__menu a {
@@ -201,7 +195,7 @@ body:before {
 }
 
 .burger__menu li a{
-    background: rgb(148,0,211);
+    background: #5a3787;
 }
 
 .burger__button.open + .burger__menu li {
@@ -209,11 +203,9 @@ body:before {
     opacity: 1;
 }
 
-
 #burgerOn{
     display: none;
 }
-
 
 nav#burgerOn.burger{
     z-index: 12;
@@ -224,31 +216,6 @@ a#burger-button.burger__button{
     left: 81vw;
     
 }
-/*****************************************************/
-/*****************************************************/
-
-
-
-/* pic */
-.rosePicWrapper{
-    display: flex;
-    flex-direction: row;
-    flex-grow: 2;
-    width: 100%;
-}
-
-
-.pic{
-    position: absolute;
-    z-index: 3;
-    opacity: 1;
-}
-
-.pic img{
-    height: 450px;
-    width: 60%; 
-}
-
 
 /* title */
 h2 {
@@ -262,11 +229,10 @@ h2 {
 }
 
 .titleCol { 
-    display: flex;
     position: relative;
     height: 450px; 
     color: white;
-    left: 50%;
+    text-align: center;
 }
 
 .col {
@@ -276,19 +242,16 @@ h2 {
     font-size: 1.2em;
     font-weight: 400;
     padding-top: 130px;
-    text-align: left;
 }
-
 
 .col h1{
     z-index: 1;
     text-align: center;
     align-content: center;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 300;
     padding: 0;
 }
-
 
 .project{
     background-repeat: no-repeat;
@@ -327,12 +290,11 @@ h2 {
 }
 
 
-/*  ============  ABOUT  =============  */
-
+/* about section */
 .aboutWrapper{
     display: flex;
     flex-direction: column;
-    height: auto;   /*  Adjust height of the example */
+    height: auto; 
     background-color: rgba(255,255,255, 0.5);
     width: 80%;
     padding-left: 10%;
@@ -348,14 +310,12 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;   /*  Adjust height of the example */
-    /*background: #138655; */
+    height: auto;
     color: #111;
     max-width: 100%;
     margin-top: 5vh;
     margin-bottom: 3vh;
     overflow: hidden;
-    
 }
 
 .ab-col {
@@ -366,12 +326,10 @@ h2 {
     font-size: 1.2em;
     font-weight: 400;
     text-align: justify;
-    /* background: #555;*/
-    max-width: 70%;  /* width od 'Abot' inside its box, so 100% means whole of its box*/
+    max-width: 70%;  
 }
 
 .ab-col span{
-    
     z-index: 3;
     padding-bottom: 50px;
 }
@@ -386,7 +344,6 @@ h2 {
 span.section-title{
     padding: 0px;
     padding-top: 20px;
-    
 }
 
 /* code Wrapper  */
@@ -415,24 +372,20 @@ span.section-title{
     background-size: contain;
 }
 
-
 #appLink2{ 
     background: url("audition-manager.png"); 
     background-size: contain;
 }
-
 
 #appLink3{ 
     background: url("minipiano.jpg");
     background-size: contain;
 }
 
-
 #appLink4{ 
     background: url("creeps.png");
     background-size: contain;
 }
-
 
 #appLink5{ 
     background: url("rose-css.jpg"); 
@@ -468,7 +421,6 @@ span.section-title{
 }
 
 /* contact section */
-
 .contact-wrapper{
     background-color: rgba(255,255,255, 0.5);
     font-family: 'Raleway', arial;
@@ -544,13 +496,11 @@ span.section-title{
     color: #000;
 }
 
-
 /*footer*/
 .footer{
     background: #5a3787;
     color: white;
     z-index: 9;
-    
 }
 
 .footerBottom {
@@ -628,19 +578,6 @@ span.section-title{
         width: 70px;
         height: 70px;
     }
-    
-    .col{
-        left: 90px;
-        z-index: 1;
-    }
-
-    .titleCol {
-        left: 28%;
-    }
-
-    .pic img{
-        display: none;
-    } 
 }
 
 @media screen and (max-width: 560px){
@@ -659,19 +596,6 @@ span.section-title{
     body{
         margin: 0;
         padding: 0;
-    }
-
-    .col {
-        left: 30px;
-        padding-top: 100px;
-    }
-
-    .titleCol {
-        left: 18%;
-    }
-    
-    .col h1{
-        text-align: left;
     }
 
     .codeLink{
@@ -721,12 +645,6 @@ span.section-title{
         text-align: left;
         font-size: 16px;
     }
-  
-    
-    .titleCol{
-        right: 0;
-        left: 3%;
-    }
 
     .col h1{
         font-size: 1.3em;
@@ -738,8 +656,7 @@ span.section-title{
     }
     
     .codeWrapper{
-        padding: 25px;
-        
+        padding: 25px;   
     }
     
     .appSize{
